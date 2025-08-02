@@ -22,70 +22,72 @@
   </head>
   <body>
     <main>
-      <h1>Contact Us</h1>
-      <form action="#">
-        <div class="row">
-          <div class="input-container">
-            <label for="first-name"
-              >First name <span class="asterisq">*</span></label
-            ><input type="text" id="first-name" name="first-name" />
-            <div class="error-message hide"></div>
-          </div>
-          <div class="input-container">
-            <label for="last-name"
-              >Last name <span class="asterisq">*</span></label
-            ><input type="text" id="last-name" name="last-name" />
-            <div class="error-message hide"></div>
-          </div>
-        </div>
-        <div class="input-container">
-          <label for="email"
-            >Email Address <span class="asterisq">*</span></label
-          >
-          <input type="email" name="email" id="email" />
-          <div class="error-message hide"></div>
-        </div>
-        <fieldset>
-          <legend>Query Type <span class="asterisq">*</span></legend>
-          <div class="input-container">
-            <div class="row">
-              <div class="radio-container">
-                <input
-                  type="radio"
-                  name="query-type"
-                  id="query-type"
-                  value="general-inquiry"
-                />
-                <label for="query-type">General Enquiry</label>
-              </div>
-              <div class="radio-container">
-                <input
-                  type="radio"
-                  name="query-type"
-                  id="query-type"
-                  value="support-request"
-                />
-                <label for="query-type">Support Request</label>
-              </div>
+      <div class="contact-form">
+        <h1>Contact Us</h1>
+        <form action="#">
+          <div class="row">
+            <div class="input-container">
+              <label for="first-name"
+                >First name <span class="asterisq">*</span></label
+              ><input type="text" id="first-name" name="first-name" />
+              <div class="error-message hide"></div>
             </div>
+            <div class="input-container">
+              <label for="last-name"
+                >Last name <span class="asterisq">*</span></label
+              ><input type="text" id="last-name" name="last-name" />
+              <div class="error-message hide"></div>
+            </div>
+          </div>
+          <div class="input-container">
+            <label for="email"
+              >Email Address <span class="asterisq">*</span></label
+            >
+            <input type="email" name="email" id="email" />
             <div class="error-message hide"></div>
           </div>
-        </fieldset>
-        <div class="input-container">
-          <label for="message">Message <span class="asterisq">*</span></label>
-          <textarea name="message" id="message" rows="6"></textarea>
-          <div class="error-message hide"></div>
-        </div>
-        <div class="input-container">
-          <input type="checkbox" name="terms" id="terms" value="agree" />
-          <label for="terms"
-            >I consent to being contacted by the team
-            <span class="asterisq">*</span></label
-          >
-          <div class="error-message hide"></div>
-        </div>
-        <button>Submit</button>
-      </form>
+          <fieldset>
+            <legend>Query Type <span class="asterisq">*</span></legend>
+            <div class="input-container">
+              <div class="row">
+                <div class="radio-container">
+                  <input
+                    type="radio"
+                    name="query-type"
+                    id="query-type"
+                    value="general-inquiry"
+                  />
+                  <label for="query-type">General Enquiry</label>
+                </div>
+                <div class="radio-container">
+                  <input
+                    type="radio"
+                    name="query-type"
+                    id="query-type"
+                    value="support-request"
+                  />
+                  <label for="query-type">Support Request</label>
+                </div>
+              </div>
+              <div class="error-message hide"></div>
+            </div>
+          </fieldset>
+          <div class="input-container">
+            <label for="message">Message <span class="asterisq">*</span></label>
+            <textarea name="message" id="message" rows="6"></textarea>
+            <div class="error-message hide"></div>
+          </div>
+          <div class="input-container terms">
+            <input type="checkbox" name="terms" id="terms" value="agree" />
+            <label for="terms"
+              >I consent to being contacted by the team
+              <span class="asterisq">*</span></label
+            >
+            <div class="error-message hide"></div>
+          </div>
+          <button>Submit</button>
+        </form>
+      </div>
     </main>
     <dialog>
       <h2>

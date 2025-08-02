@@ -57,7 +57,8 @@ select {
 }
 
 .asterisq {
-  vertical-align: super;
+  padding-bottom: 5px;
+  padding-left: 3px;
   color: var(--green-600);
 }
 
@@ -70,6 +71,14 @@ body {
   color: var(--grey-900);
 }
 
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 h1,
 label,
 legend,
@@ -77,10 +86,69 @@ button {
   font-weight: var(--fw-700);
 }
 
-form {
-  background-color: var(--white);
+input,
+textarea,
+.radio-container {
+  display: block;
+  border: 1px solid var(--grey-500);
+  border-radius: 0.3rem;
+  padding: 0.5rem 1.5rem;
+}
+
+input,
+button,
+textarea {
+  width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline-block;
+  width: unset;
+}
+
+fieldset {
+  border: none;
 }
 
 form button {
   border: none;
+}
+
+/* ### CONTACT FORM ### */
+
+.contact-form {
+  padding: 2.5rem 2rem;
+  border-radius: 0.8rem;
+  background-color: var(--white);
+}
+
+form {
+  margin-top: 1.5rem;
+}
+
+form,
+.row {
+  display: grid;
+  gap: 1.5rem;
+}
+
+label,
+legend {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.terms,
+.radio-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+form button {
+  background-color: var(--green-600);
+  color: var(--white);
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
 }
