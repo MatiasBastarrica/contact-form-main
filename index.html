@@ -11,16 +11,96 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Frontend Mentor | Contact form</title>
   </head>
   <body>
-    Contact Us First Name This field is required Last Name This field is
-    required Email Address Please enter a valid email address This field is
-    required Query Type General Enquiry Support Request Please select a query
-    type Message This field is required I consent to being contacted by the team
-    To submit this form, please consent to being contacted Submit Message Sent!
-    Thanks for completing the form. We'll be in touch soon!
+    <main>
+      <h1>Contact Us</h1>
+      <form action="#">
+        <div class="row">
+          <div class="input-container">
+            <label for="first-name"
+              >First name <span class="asterisq">*</span></label
+            ><input type="text" id="first-name" name="first-name" />
+            <div class="error-message hide"></div>
+          </div>
+          <div class="input-container">
+            <label for="last-name"
+              >Last name <span class="asterisq">*</span></label
+            ><input type="text" id="last-name" name="last-name" />
+            <div class="error-message hide"></div>
+          </div>
+        </div>
+        <div class="input-container">
+          <label for="email"
+            >Email Address <span class="asterisq">*</span></label
+          >
+          <input type="email" name="email" id="email" />
+          <div class="error-message hide"></div>
+        </div>
+        <fieldset>
+          <legend>Query Type <span class="asterisq">*</span></legend>
+          <div class="input-container">
+            <div class="row">
+              <div class="radio-container">
+                <input
+                  type="radio"
+                  name="query-type"
+                  id="query-type"
+                  value="general-inquiry"
+                />
+                <label for="query-type">General Enquiry</label>
+              </div>
+              <div class="radio-container">
+                <input
+                  type="radio"
+                  name="query-type"
+                  id="query-type"
+                  value="support-request"
+                />
+                <label for="query-type">Support Request</label>
+              </div>
+            </div>
+            <div class="error-message hide"></div>
+          </div>
+        </fieldset>
+        <div class="input-container">
+          <label for="message">Message <span class="asterisq">*</span></label>
+          <textarea name="message" id="message" rows="6"></textarea>
+          <div class="error-message hide"></div>
+        </div>
+        <div class="input-container">
+          <input type="checkbox" name="terms" id="terms" value="agree" />
+          <label for="terms"
+            >I consent to being contacted by the team
+            <span class="asterisq">*</span></label
+          >
+          <div class="error-message hide"></div>
+        </div>
+        <button>Submit</button>
+      </form>
+    </main>
+    <dialog>
+      <h2>
+        <span
+          ><img src="./assets/images/icon-success-check.svg" alt="" /> Message
+          Sent!</span
+        >
+      </h2>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </dialog>
+    First Name This field is required Last Name This field is required Email
+    Address Please enter a valid email address This field is required Query Type
+    General Enquiry Support Request Please select a query type Message This
+    field is required I consent to being contacted by the team To submit this
+    form, please consent to being contacted Submit
     <script src="script.js"></script>
   </body>
 </html>
