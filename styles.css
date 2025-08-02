@@ -157,6 +157,37 @@ input[type="radio"]::before {
 input[type="radio"]:checked::before {
   border: none;
   background-image: url(/assets/images/icon-radio-selected.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+input[type="checkbox"] {
+  border: none;
+  padding: unset;
+  border-radius: unset;
+  flex-shrink: 0;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid gray;
+}
+
+input[type="checkbox"]:checked::before {
+  border: none;
+  background-image: url(/assets/images/icon-checkbox-check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 label,
