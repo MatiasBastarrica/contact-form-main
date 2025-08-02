@@ -49,3 +49,14 @@ textarea,
 select {
   font: inherit;
 }
+
+/* ### UTILITY CLASSES ### */
+
+.hide {
+  display: none;
+}
+
+.asterisq {
+  vertical-align: super;
+  color: var(--green-600);
+}
