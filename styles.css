@@ -60,3 +60,27 @@ select {
   vertical-align: super;
   color: var(--green-600);
 }
+
+/* ### GENERAL STYLING ### */
+
+body {
+  font-family: var(--ff-karla);
+  font-weight: var(--fw-400);
+  background-color: var(--green-200);
+  color: var(--grey-900);
+}
+
+h1,
+label,
+legend,
+button {
+  font-weight: var(--fw-700);
+}
+
+form {
+  background-color: var(--white);
+}
+
+form button {
+  border: none;
+}
