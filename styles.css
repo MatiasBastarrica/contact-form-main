@@ -58,6 +58,16 @@ select {
   color: var(--green-600);
 }
 
+.border-invalid {
+  border-color: var(--red);
+}
+
+.error-message {
+  color: var(--red);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
 /* ### GENERAL STYLING ### */
 
 body {
@@ -110,6 +120,7 @@ fieldset {
 
 form button {
   border: none;
+  cursor: pointer;
 }
 
 /* ### CONTACT FORM ### */
@@ -202,15 +213,25 @@ legend {
   margin-bottom: unset;
 }
 
-.terms,
 .radio-container {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
+.terms {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 20px 1fr;
+  column-gap: 1rem;
+}
+
 .terms label {
   margin-bottom: unset;
+}
+
+.terms .error-message {
+  grid-column: span 2;
 }
 
 form button {

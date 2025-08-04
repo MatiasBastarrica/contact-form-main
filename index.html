@@ -29,13 +29,13 @@
             <div class="input-container">
               <label for="first-name"
                 >First name <span class="asterisq">*</span></label
-              ><input type="text" id="first-name" name="first-name" />
+              ><input type="text" id="first-name" name="first-name" required />
               <div class="error-message hide"></div>
             </div>
             <div class="input-container">
               <label for="last-name"
                 >Last name <span class="asterisq">*</span></label
-              ><input type="text" id="last-name" name="last-name" />
+              ><input type="text" id="last-name" name="last-name" required />
               <div class="error-message hide"></div>
             </div>
           </div>
@@ -43,7 +43,7 @@
             <label for="email"
               >Email Address <span class="asterisq">*</span></label
             >
-            <input type="email" name="email" id="email" />
+            <input type="email" name="email" id="email" required />
             <div class="error-message hide"></div>
           </div>
           <fieldset>
@@ -56,6 +56,7 @@
                     name="query-type"
                     id="general-enquiry"
                     value="general-enquiry"
+                    required
                   />
                   <label for="general-enquiry">General Enquiry</label>
                 </div>
@@ -65,6 +66,7 @@
                     name="query-type"
                     id="support-request"
                     value="support-request"
+                    required
                   />
                   <label for="support-request">Support Request</label>
                 </div>
@@ -74,11 +76,17 @@
           </fieldset>
           <div class="input-container">
             <label for="message">Message <span class="asterisq">*</span></label>
-            <textarea name="message" id="message" rows="6"></textarea>
+            <textarea name="message" id="message" rows="6" required></textarea>
             <div class="error-message hide"></div>
           </div>
           <div class="input-container terms">
-            <input type="checkbox" name="terms" id="terms" value="agree" />
+            <input
+              type="checkbox"
+              name="terms"
+              id="terms"
+              value="agree"
+              required
+            />
             <label for="terms"
               >I consent to being contacted by the team
               <span class="asterisq">*</span></label
