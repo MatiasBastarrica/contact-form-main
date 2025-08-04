@@ -145,6 +145,16 @@ form,
   gap: 1.5rem;
 }
 
+input:hover,
+textarea:hover {
+  cursor: pointer;
+  border-color: var(--green-600);
+}
+
+.radio-container label:hover {
+  cursor: pointer;
+}
+
 input[type="radio"] {
   border: none;
   padding: unset;
@@ -247,6 +257,10 @@ form button {
   color: var(--white);
   padding: 0.8rem 1rem;
   border-radius: 0.4rem;
+}
+
+form button:hover {
+  background-color: hsl(106, 69%, 13%);
 }
 
 /* ### MEDIA QUERIES ### */
