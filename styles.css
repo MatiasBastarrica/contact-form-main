@@ -65,7 +65,7 @@ select {
 .error-message {
   color: var(--red);
   font-size: 0.9rem;
-  margin-top: 0.5rem;
+  margin-top: 0.7rem;
 }
 
 /* ### GENERAL STYLING ### */
@@ -91,6 +91,10 @@ label,
 legend,
 button {
   font-weight: var(--fw-700);
+}
+
+h1 {
+  color: #2d3c3d;
 }
 
 input,
@@ -201,7 +205,9 @@ label,
 legend {
   display: inline-block;
   margin-bottom: 0.5rem;
-  font-size: 1.065rem;
+  font-size: 0.9rem;
+  color: #333435;
+  font-weight: var(--fw-400);
 }
 
 .radio-container {
@@ -211,6 +217,7 @@ legend {
 
 .radio-container label {
   margin-bottom: unset;
+  font-size: 0.985rem;
 }
 
 .radio-container {
@@ -228,6 +235,7 @@ legend {
 
 .terms label {
   margin-bottom: unset;
+  cursor: pointer;
 }
 
 .terms .error-message {
@@ -245,7 +253,7 @@ form button {
 
 @media (min-width: 68.75em) {
   .contact-form {
-    max-width: 700px;
+    max-width: 660px;
     width: 100%;
   }
 
