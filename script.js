@@ -4,13 +4,6 @@ const inputContainers = document.querySelectorAll(".input-container");
 
 textArea.addEventListener("invalid", (e) => e.preventDefault());
 
-formInputs.forEach((input) => {
-  input.addEventListener("invalid", (e) => {
-    e.preventDefault();
-    // input.style.border = "3px solid yellow";
-  });
-});
-
 function changeBorderClr(input) {
   input.classList.add("border-invalid");
 }
