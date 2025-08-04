@@ -41,6 +41,11 @@ inputContainers.forEach((inputContainer) => {
         input.getAttribute("type") === "email"
       ) {
         errorMessage.textContent = "Please enter a valid email address";
+      } else if (
+        input.getAttribute("type") === "radio" &&
+        input.validity.valueMissing
+      ) {
+        errorMessage.textContent = "Please select a query type";
       } else {
         console.log("hola");
         errorMessage.textContent = "This field is required";
