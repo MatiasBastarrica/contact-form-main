@@ -1,8 +1,6 @@
 const formInputs = document.querySelectorAll("input");
-const textArea = document.querySelector("textarea");
+// const textArea = document.querySelector("textarea");
 const inputContainers = document.querySelectorAll(".input-container");
-
-textArea.addEventListener("invalid", (e) => e.preventDefault());
 
 function changeBorderClr(input) {
   input.classList.add("border-invalid");
@@ -12,6 +10,22 @@ inputContainers.forEach((inputContainer) => {
   const inputs = inputContainer.querySelectorAll("input");
   const textarea = inputContainer.querySelector("textarea");
   const errorMessage = inputContainer.querySelector(".error-message");
+
+  if (textarea) {
+    textarea.addEventListener("invalid", (e) => {
+      e.preventDefault();
+      errorMessage.classList.remove("hide");
+      errorMessage.textContent = "This field is required";
+      changeBorderClr(textarea);
+    });
+
+    textarea.addEventListener("input", (e) => {
+      if (textarea.validity.valid) {
+        errorMessage.classList.add("hide");
+        textarea.style.borderColor = "unset";
+      }
+    });
+  }
 
   for (let i = 0; i < inputs.length; i++) {
     const input = inputs[i];
@@ -40,7 +54,6 @@ inputContainers.forEach((inputContainer) => {
       ) {
         errorMessage.textContent = "Please select a query type";
       } else {
-        console.log("hola");
         errorMessage.textContent = "This field is required";
       }
     });
