@@ -1,5 +1,4 @@
-const formInputs = document.querySelectorAll("input");
-// const textArea = document.querySelector("textarea");
+const form = document.querySelector("form");
 const inputContainers = document.querySelectorAll(".input-container");
 
 function changeBorderClr(input) {
@@ -36,7 +35,6 @@ inputContainers.forEach((inputContainer) => {
 
       errorMessage.classList.remove("hide");
 
-      // errorMessage.textContent = "This field is required";
       if (
         input.validity.valueMissing &&
         input.getAttribute("type") === "checkbox"
@@ -66,3 +64,34 @@ inputContainers.forEach((inputContainer) => {
     });
   }
 });
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const inputs = document.querySelectorAll("input");
+  const textarea = document.querySelector("textarea");
+  const errorMessages = document.querySelectorAll(".error-message");
+
+  for (let i = 0; i < inputs.length; i++) {
+    const input = inputs[i];
+    input.style.borderColor = "unset";
+    if (
+      input.getAttribute("type") === "radio" ||
+      input.getAttribute("type") === "checkbox"
+    ) {
+      input.checked = false;
+    } else {
+      clearInput(input);
+    }
+  }
+
+  textarea.style.borderColor = "unset";
+  clearInput(textarea);
+
+  errorMessages.forEach((errorMessage) => {
+    errorMessage.classList.add("hide");
+  });
+});
+
+function clearInput(input) {
+  input.value = "";
+}
