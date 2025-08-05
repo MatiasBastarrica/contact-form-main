@@ -70,6 +70,7 @@ form.addEventListener("submit", (e) => {
   const inputs = document.querySelectorAll("input");
   const textarea = document.querySelector("textarea");
   const errorMessages = document.querySelectorAll(".error-message");
+  const dialog = document.querySelector("dialog");
 
   for (let i = 0; i < inputs.length; i++) {
     const input = inputs[i];
@@ -90,6 +91,8 @@ form.addEventListener("submit", (e) => {
   errorMessages.forEach((errorMessage) => {
     errorMessage.classList.add("hide");
   });
+
+  dialog.show();
 });
 
 function clearInput(input) {
