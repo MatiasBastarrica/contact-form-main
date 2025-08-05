@@ -1,0 +1,70 @@
+# Frontend Mentor - Contact form solution
+
+This is a solution to the [Contact form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- Complete the form and see a success toast message upon successful submission
+- Receive form validation messages if:
+  - A required field has been missed
+  - The email address is not formatted correctly
+- Complete the form only using their keyboard
+- Have inputs, error messages, and the success message announced on their screen reader
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
+
+### Screenshot
+
+![](./screenshot.png)
+
+### Links
+
+- Solution URL: [My Solution](https://your-solution-url.com)
+- Live Site URL: [Live](https://matiasbastarrica.github.io/contact-form-main/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- JavaScript
+
+### What I learned
+
+I learned to show a success message when the form is submitted correctly and to show error messages when an input is not valid. I also learned to customize the style of the radio inputs as well as the checkmark input.
+
+### Continued development
+
+In the future I'd like to continue working with form validation
+
+### Useful resources
+
+- [HTML form validation and the Constraint API](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Constraint_validation) - This helped me to understand how to handle the display of the error messages.
+- [Js form validation](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation#validating_forms_using_javascript) - This is an amazing article which helped grasp the general idea behind form validation using Js.
+- [Validity State](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState) - This helped understand the ValidityState interface for the correct use of the Constraint API.
+- [input Event](https://developer.mozilla.org/en-US/docs/Web/API/Element/input_event) - This event helped me to reset the style of the valid inputs after the user has fix them.
+
+## Author
+
+- Frontend Mentor - [@MatiasBastarrica](https://www.frontendmentor.io/profile/MatiasBastarrica)
