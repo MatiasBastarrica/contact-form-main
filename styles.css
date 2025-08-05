@@ -151,6 +151,12 @@ textarea:hover {
   border-color: var(--green-600);
 }
 
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid var(--green-600);
+}
+
 .radio-container label:hover {
   cursor: pointer;
 }
@@ -223,6 +229,15 @@ legend {
 .radio-container {
   font-size: 1.185rem;
   box-sizing: content-box;
+}
+
+.radio-container:focus {
+  border-color: var(--green-600);
+  background-color: var(--green-200);
+}
+
+.radio-container:active {
+  background-color: var(--green-200);
 }
 
 .radio-container label {
