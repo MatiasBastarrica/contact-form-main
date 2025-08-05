@@ -273,6 +273,29 @@ form button:hover {
   background-color: hsl(106, 69%, 13%);
 }
 
+/* ## DIALOG ## */
+
+dialog {
+  top: 1rem;
+  margin-inline: auto;
+  color: var(--white);
+  background-color: #2a4244;
+  padding: 1.5rem 1rem;
+  border-radius: 0.8rem;
+}
+
+dialog h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+dialog p {
+  margin-top: 0.8rem;
+  font-size: 0.9125rem;
+}
+
 /* ### MEDIA QUERIES ### */
 
 @media (min-width: 68.75em) {
