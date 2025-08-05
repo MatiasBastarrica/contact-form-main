@@ -46,6 +46,10 @@ select {
   font: inherit;
 }
 
+textarea {
+  resize: none;
+}
+
 /* ### UTILITY CLASSES ### */
 
 .hide {
@@ -246,6 +250,10 @@ legend {
   gap: 1rem;
 }
 
+form textarea {
+  min-height: 240px;
+}
+
 .terms {
   display: grid;
   align-items: center;
@@ -306,5 +314,9 @@ dialog p {
 
   .row {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  form textarea {
+    min-height: 140px;
   }
 }
